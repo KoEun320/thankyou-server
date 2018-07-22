@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>투표</h1>
+
+    <div class="container">
+      <table id="poll_list_table">
+        <thead>
+          <tr>
+            <th>제목</th>
+            <th>생성자</th>
+            <th>만료 날짜</th>
+            <th>진행 여부</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% poll.forEach(function (poll) { %>
+            <tr>
+              <td><%= poll.title %></td>
+              <td><%= poll.creator%></td>
+              <td class="end_date"><%= poll.expiration_of_date%></td>
+              <td>진행중</a></td>
+              <td><a href="votings/<%= poll._id %>">투표하기</a></td>
+            </tr>
+          <% }); %>
+        </tbody>
+      </table>
+      <a class="create_poll" href="/votings/new">투표 생성하기</a>
+    </div>
+    <script src="/javascripts/jquery-3.3.1.min.js"></script>
+    <script src="/javascripts/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+		<script src="/javascripts/index.js"></script>
+  </head>
+  <body>
+    <h1><%= poll_title %></h1>
+		<div class="container" id="poll_box" data-fin="<%= poll_expired%>">
+			<form id="updatePoll" >
+					<% poll_detail.forEach(function (data) { %>
+						<div class="group">
+							<label for="radio_checkbox" data-count="<%= data.count %>" class="poll_detail_label">
+								<input type="radio" value= "<%= data.content %>" name="radio_checkbox" />
+								<%= data.content %>
+							</label>
+						</div>
+					<% }) %>
+					<div class="group">
+						<button id="poll_send" type="submit">투표 하기</button>
+						<a class="poll_list" href="/">투표 목록</a>
+					</div>
+			</form>
+		</div>
+		<script src="/javascripts/jquery-3.3.1.min.js"></script>
+    <script src="/javascripts/poll.js"></script>
+  </body>
+</html>
+

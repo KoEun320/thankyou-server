@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>투표 만들기</h1>
+
+    <div class="form_table">
+      <form id="add_poll_form">
+        <div class="group">
+          <label class="add_poo_label" for="poll_titie">제목</label>
+          <input type="text" name="poll_titie">
+        </div>
+        <div class="group">
+          <label class="add_poo_label" for="poll_creator">생성자</label>
+          <input type="text" name="poll_creator">
+        </div>
+        <div class="group">
+          <label class="add_poo_label" for="expiration_date">종료일자</label>
+          <input type="date" name="expiration_date">
+        </div>
+        <ul id="add_poll_item_list">
+          <li class="group"><label class="add_poo_label" for="item01">항목</label><input type="text" class="option_item" name="item01"></li>
+          <li class="group"><label class="add_poo_label" for="item02">항목</label><input type="text" class="option_item" name="itme02"></li>
+        </ul>
+        <div class="group">
+          <a class="poll_list" href="/">투표 목록보기</a>
+          <button id="add_poll_button">투표 만들기</button>
+          <button id="add_item">+ 항목 추가하기</button>
+        </div>
+      </form>
+    </div>
+    <script src="/javascripts/jquery-3.3.1.min.js"></script>
+    <script src="/javascripts/new.js"></script>
+  </body>
+</html>
