@@ -16,7 +16,7 @@
 - 랜덤으로 타인이 쓴 감사글 보기
 
 ## Server-Side
-- 서버사이드 플랫폼 Node.js
+- Node.js
 - Node.js 웹 어플리케이션 프레임워크 Express
 - JSON Web Token Authentication
 - NoSQL 데이터베이스, MongoDB
