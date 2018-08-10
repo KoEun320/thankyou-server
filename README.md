@@ -16,9 +16,9 @@
 - 랜덤으로 타인이 쓴 감사글 보기
 
 ## Server-Side
-- 자바스크립트 엔진(V8 engine)기반의 서버사이드 플랫폼 Node.js
+- 서버사이드 플랫폼 Node.js
 - Node.js 웹 어플리케이션 프레임워크 Express
 - JSON Web Token Authentication
-- 대표적인 NoSQL 데이터베이스, MongoDB
+- NoSQL 데이터베이스, MongoDB
 - MongoDB 기반의 Node.js 전용 ODM 라이브러리 Mongoose
 - MongoDB 호스팅 플랫폼 mlab 사용
